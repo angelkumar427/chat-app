@@ -8,9 +8,10 @@ const socket = require("socket.io");
 require("dotenv").config();
 
 app.use(cors({
-  origin: "*",
-  credentials: true,
+  origin: ["https://chat-app-frontend-amber-five.vercel.app", "http://localhost:3000"],
+  credentials: true
 }));
+
 app.use(express.json());
 
 mongoose
